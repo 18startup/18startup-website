@@ -1,0 +1,222 @@
+.blogs__center, .empty__center, .no__recent {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    row-gap: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8rem;
+}
+
+.empty__center {
+    gap: 1.2rem;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+.no__recent {
+    gap: 1rem;
+    justify-content: center;
+}
+
+.empty__center svg, .no__recent svg {
+    width: 164px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.no__recent svg {
+    width: 120px;
+}
+
+.empty__center p, .no__recent p {
+    font-size: 1.02rem;
+    font-weight: 400;
+    color: var(--mainText);
+    text-align: center;
+}
+
+.recent__blogs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.1rem;
+}
+
+.main__blog, .recent {
+    max-width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.recent {
+    padding-top: 1.6rem;
+}
+
+.main__blog {
+    width: 54%;
+}
+
+.recent {
+    width: 46%;
+}
+
+.main__blog h1, .empty__center h1, .no__recent h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+    color: var(--mainText);
+}
+
+.no__recent h1 {
+    font-size: 1.6rem;
+}
+
+.main__blog h1 span, .empty__center h1 span, .no__recent h1 span {
+    color: var(--primaryOrange);
+}
+
+.top__blog {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: #FFF;
+    outline: none;
+    box-shadow: 0 4px 4px 1px #23232320;
+}
+
+.top__blog img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    background-color: var(--lightOrange);
+}
+
+.blog__details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.4rem 0.88rem 0.88rem;
+}
+
+.blog__details h3 {
+    font-size: 1.24rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--mainText);
+    transition: color 0.3s ease;
+}
+
+.blog__details p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    color: var(--mainText);
+    transition: color 0.3s ease;
+}
+
+.recent h2 {
+    font-size: 1.32rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--mainText);
+}
+
+.most__recent, .recent__blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.recent__blog {
+    gap: 0.3rem;
+    padding: 0rem 0.4rem 0.6rem;
+    outline: none;
+}
+
+.recent__blog h4 {
+    font-size: 1.036rem;
+    font-weight: 500;
+    text-align: left;
+    color: var(--mainText);
+    transition: color 0.3s ease;
+}
+
+.recent__blog p:nth-child(1) {
+    font-size: 0.98rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--mediumOrange);
+}
+
+.recent__blog p:nth-child(3) {
+    font-size: 0.88rem;
+    text-align: left;
+    color: var(--mainText);
+    transition: color 0.3s ease;
+}
+
+.recent__blog:not(:last-child) {
+    border-bottom: 1.2px solid var(--mainText);
+}
+
+.all__blogs {
+    width: 100%;
+    max-width: 100%;
+    margin: 1.6rem auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .top__blog:is(:hover, :focus-within) .blog__details > *, .recent__blog:is(:hover, :focus-within) > h4 {
+        color: var(--primaryOrange);
+    }
+
+    .top__blog:is(:hover, :focus-within) .blog__details h3, .recent__blog:is(:hover, :focus-within) > h4 {
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .recent__blogs {
+        gap: 0.8rem;
+    }
+}
+
+@media all and (max-width: 930px) {
+    .recent__blogs {
+        flex-direction: column;
+        gap: 2.1rem;
+    }
+
+    .main__blog, .recent, .recent__blog {
+        width: 100%;
+        padding: 0;
+    }
+
+    .recent__blog {
+        padding-bottom: 0.8rem;
+    }
+}

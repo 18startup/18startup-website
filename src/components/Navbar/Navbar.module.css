@@ -1,0 +1,208 @@
+.app__navbar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--mainBg);
+    border-bottom: 0.8px solid var(--primaryOrange);
+}
+
+.navbar__center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.navbar__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__left img {
+    width: 170px;
+    height: 72px;
+    object-fit: contain;
+    object-position: center;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.navbar__menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.2rem;
+    padding-left: 2rem;
+}
+
+.navbar__menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    padding: 0.24rem 0.36rem;
+    color: var(--mainText);
+    border-bottom: 2px solid transparent;
+    transition: border 0.24s ease, color 0.24s ease;
+}
+
+.navbar__menu a.active__menu {
+    color: var(--primaryOrange);
+    border-bottom-color: var(--primaryOrange);
+}
+
+.navbar__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.navbar__right a {
+    color: var(--mainText);
+    padding: 0.24rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 2px solid transparent;
+    transition: border 0.24s ease, color 0.24s ease;
+}
+
+.smallmenu__button {
+    display: none;
+}
+
+@media (pointer: fine) and (hover: hover) {
+    .navbar__menu a:not(.active__menu):focus-visible {
+        border-bottom-color: var(--mediumOrange);
+        color: var(--mediumOrange);
+    }
+
+    .navbar__menu a:not(.active__menu):hover {
+        color: var(--mediumOrange);
+    }
+
+    .navbar__right a:focus-visible {
+        border-color: var(--mediumOrange);
+        color: var(--primaryOrange);
+    }
+
+    .navbar__right a:hover {
+        color: var(--mediumOrange);
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .navbar__menu {
+        padding-left: 1.2rem;
+        gap: 0.8rem;
+    }
+}
+
+@media all and (max-width: 900px) {
+
+    .navbar__center {
+        position: relative;
+    }
+
+    .navbar__right {
+        flex-grow: 1;
+        justify-content: flex-start;
+        padding-left: 0.8rem;
+    }
+
+    .navbar__menu {
+        position: fixed;
+        width: 260px;
+        max-width: 100%;
+        height: 100vh;
+        flex: 0 0 auto;
+        background-color: var(--mainBg);
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 6rem;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.2rem;
+        z-index: 998;
+        top: 0;
+        right: 0;
+        padding-left: 0;
+        box-shadow: -4px 0px 12px 2px var(--lightOrange);
+        transition: transform 0.24s ease;
+        transform: translateX(900px);
+    }
+    
+    .navbar__menu.menu__active {
+        transform: translateX(0px);
+    }
+
+    .smallmenu__button {
+        width: 36px;
+        height: 32px;
+        padding: 0.24rem;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        gap: 0.24rem;
+        z-index: 1000;
+        border: 1.36px solid var(--primaryOrange);
+        background-color: var(--mainBg);
+        transition: background-color 0.32s ease;
+    }
+    
+    .smallmenu__button div {
+        width: 21px;
+        height: 1.6px;
+        background-color: var(--primaryOrange);
+        border-radius: 6px;
+        transition: all 0.24s ease;
+        position: relative;
+    }
+
+    .smallmenu__button.menu__active {
+        position: fixed;
+        right: 16px;
+        background-color: var(--primaryOrange);
+    }
+
+    .smallmenu__button.menu__active div {
+        background-color: var(--mainBg);
+    }
+
+    .smallmenu__button.menu__active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .smallmenu__button.menu__active div:nth-child(1) {
+        width: 21px;
+        transform: translateY(0px) rotate(45deg);
+        position: absolute;
+    }
+
+    .smallmenu__button.menu__active div:nth-child(3) {
+        width: 21px;
+        transform: translateY(0px) rotate(-45deg);
+        position: absolute;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navbar__center {
+        padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+    }
+
+    .navbar__left img {
+        width: 164px;
+    }
+}

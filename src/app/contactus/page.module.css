@@ -1,0 +1,335 @@
+.contact__center {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.contact__head {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(181deg, #FFFFFF 5%, #fed9898d 34%, #d2b77c7c 64%, #f374355e 90%);
+}
+
+.contact__hero {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 4.2rem 0 3rem;
+    margin: 1rem auto;
+}
+
+.contact__hero h1 {
+    font-size: 2.8rem;
+    color: var(--mainText);
+    font-weight: 700;
+}
+
+.contact__hero h1 span {
+    color: var(--primaryOrange);
+}
+
+.contact__hero p {
+    width: 60%;
+    font-size: 1.04rem;
+    font-weight: 500;
+    color: var(--mainText);
+    text-align: center;
+}
+
+.contact__details {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: var(--mainBg);
+    position: relative;
+    z-index: 10;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.details__main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail {
+    width: 240px;
+    height: 170px;
+    border: 2px solid var(--mainText);
+    border-radius: 6px;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.detail h4 {
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: var(--primaryOrange);
+    text-align: center;
+}
+
+.detail p {
+    font-size: 0.92rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--mainText);
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.media a {
+    color: var(--mainText);
+    padding: 0.12rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 2px solid transparent;
+    transition: border 0.24s ease, color 0.24s ease;
+}
+
+.form__main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form {
+    width: min(580px, 90%);
+    height: 100%;
+    background-color: var(--primaryOrange);
+    padding: 1.2rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.contact__form h2 {
+    text-align: left;
+    font-size: 1.48rem;
+    color: var(--mainBg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.contact__form h2 span {
+    font-size: 0.8rem;
+}
+
+.form__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+
+.form__input label {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    color: var(--mainBg);
+}
+
+.form__input input, .form__input textarea {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    font-family: inherit;
+    font-size: 0.94rem;
+    border-radius: 6px;
+    background-color: var(--mainBg);
+    color: var(--mainText);
+    border: none;
+    font-weight: 500;
+
+    outline: 1.4px solid transparent;
+    outline-offset: 2px;
+    transition: outline 0.24s ease, color 0.24s ease;
+}
+
+.form__input input:focus, .form__input textarea:focus {
+    outline-color: var(--mainBg);
+    color: var(--primaryOrange);
+}
+
+.form__input textarea {
+    height: 160px;
+    resize: none;
+}
+
+.form__input input::placeholder, .form__input textarea::placeholder {
+    color: #49494999;
+}
+
+.form__input input:focus::placeholder, .form__input textarea:focus::placeholder {
+    color: #f374358a;
+}
+
+.contact__form button {
+    padding: 0.5rem 0.8rem;
+    border: 2px solid var(--primaryOrange);
+    background-color: var(--mainBg);
+    color: var(--primaryOrange);
+    font-family: inherit;
+    font-size: 1.08rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: 1.2px solid transparent;
+    outline-offset: 2px;
+    transition: background-color 0.24s ease, color 0.24s ease, border 0.24s ease, outline 0.24s ease;
+}
+
+.contact__form button:disabled {
+    background-color: #FFFFFFB0;
+    color: var(--mediumOrange);
+    cursor: not-allowed;
+}
+
+.contact__map {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 0.8rem;
+}
+
+.contact__map h2 {
+    text-align: left;
+    font-size: 1.48rem;
+    color: var(--mainText);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.contact__map iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/6;
+    border-radius: 8px;
+    outline: none;
+    border: 2.4px solid var(--mainText);
+    background: linear-gradient(181deg, #FFFFFF 5%, #fed9898d 34%, #d2b77c7c 64%, #f374355e 90%);
+}
+
+@media (pointer: fine) and (hover: hover) {
+    .media a:hover {
+        color: var(--primaryOrange);
+    }
+
+    .media a:focus-visible {
+        border-color: var(--mediumOrange);
+        color: var(--primaryOrange);
+    }
+
+    .contact__form button:hover {
+        background-color: var(--primaryOrange);
+        color: var(--mainBg);
+        border-color: var(--mainBg);
+    }
+
+    .contact__form button:focus-visible {
+        outline-color: var(--mainBg);
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .contact__map iframe {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .contact__hero {
+        min-height: 50vh;
+    }
+
+    .contact__hero p {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .contact__details {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .details__main, .form__main {
+        width: 100%;
+    }
+
+    .contact__form {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .contact__head {
+        height: 50vh;
+    }
+
+    .contact__head h1 {
+        font-size: 3.6rem;
+    }
+
+    .contact__head img {
+        height: 150px;
+        bottom: -30px;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+
+    .contact__map iframe {
+        aspect-ratio: 9/16;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .detail {
+        width: 100%;
+    }
+}

@@ -1,0 +1,253 @@
+.flex__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.para {
+    font-size: 1.04rem;
+    font-weight: 500;
+    color: var(--mainText);
+    text-align: center;
+}
+
+.para span {
+    color: var(--primaryOrange);
+}
+
+.community__center {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 0.8rem;
+}
+
+.main__title {
+    font-size: 2.1rem;
+    color: var(--mainText);
+    font-weight: 700;
+}
+
+.sub__title {
+    font-size: 1.8rem;
+    color: var(--mainText);
+    font-weight: 600;
+}
+
+.main__title span, .sub__title span {
+    color: var(--primaryOrange);
+}
+
+.community__hero {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 4.2rem 0 3rem;
+    margin: 1rem auto;
+}
+
+.community__hero p {
+    width: 50%;
+}
+
+.community__hero button {
+    background-color: var(--primaryOrange);
+    color: var(--mainBg);
+    border: 1.5px solid var(--primaryOrange);
+    padding: 0.7rem 1.2rem;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: color 0.24s ease, background-color 0.24s ease;
+}
+
+.community__diff, .community__events {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2.4rem auto;
+    gap: 2rem;
+    padding: 0.2rem;
+}
+
+.diff__details {
+    width: 540px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.diff__details p {
+    text-align: left;
+    font-weight: 400;
+    width: 80%;
+}
+
+.events__main {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.each__event {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin: 1.8rem auto;
+}
+
+.each__event:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.each__event img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: linear-gradient(181deg, #FFFFFF 5%, #fed9898d 34%, #d2b77c7c 64%, #f374355e 90%);
+}
+
+.event__details {
+    width: 480px;
+    height: 200px;
+    padding: 1.2rem 1.8rem;
+    border: 1.6px solid var(--mainText);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+    border-radius: 6px;
+    background-color: var(--mainBg);
+    transition: all 0.24s ease;
+}
+
+.event__details h3 {
+    text-align: left;
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--mainText);
+    transition: color 0.24s ease;
+}
+
+.event__details p {
+    text-align: left;
+    font-weight: 400;
+    transition: color 0.24s ease;
+}
+
+@media (pointer: fine) and (hover: hover) {
+    .community__hero button:is(:hover, :focus-visible) {
+        background-color: var(--mainBg);
+        color: var(--primaryOrange);
+    }
+
+    .event__details:hover {
+        background-color: var(--primaryOrange);
+    }
+
+    .event__details:hover h3, .event__details:hover p {
+        color: var(--mainBg);
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .community__hero p, .diff__details p {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .community__diff {
+        flex-direction: column-reverse;
+    }
+
+    .diff__details {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .community__hero p {
+        width: 100%;
+    }
+
+    .diff__details, .diff__details p {
+        width: 100%;
+    }
+
+    .diff__images img:nth-child(2) {
+        left: -50px;
+        top: -30px;
+    }
+
+    .diff__images img:nth-child(1) {
+        width: 270px;
+    }
+
+    .diff__images img:nth-child(2) {
+        width: 120px;
+    }
+
+    .events__main {
+        gap: 1.5rem;
+    }
+
+    .each__event img {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .event__details {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .main__title {
+        font-size: 1.9rem;
+    }
+
+    .sub__title {
+        font-size: 1.5rem;
+    }
+
+    .community__diff {
+        padding-top: 2rem;
+    }
+
+    .diff__images img:nth-child(2) {
+        left: 75px;
+        top: -90px;
+    }
+
+    .events__main {
+        margin: auto;
+    }
+
+    .each__event {
+        gap: 1rem;
+    }
+
+    .each__event img {
+        width: 100%;
+    }
+
+}

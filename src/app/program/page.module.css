@@ -1,0 +1,461 @@
+.program__center {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    row-gap: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__title {
+    font-size: 2.1rem;
+    color: var(--mainText);
+    font-weight: 700;
+}
+
+.sub__title {
+    font-size: 1.8rem;
+    color: var(--mainText);
+    font-weight: 600;
+}
+
+.main__title span, .sub__title span {
+    color: var(--primaryOrange);
+}
+
+.program__hero, .program__fellowship, .program__journey, .program__curriculum, .program__enrollment {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 3.2rem 1.2rem;
+}
+
+.program__hero h1 {
+    width: 40%;
+}
+
+.hero__main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 1.6rem auto;
+    flex-direction: column;
+}
+
+.block, .fellowship__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.block img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 6px;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.block__more {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.block p, .block__more p {
+    width: 300px;
+    text-align: center;
+    color: var(--mainText);
+    background-color: var(--lightOrange);
+    border: 2px solid var(--primaryOrange);
+    padding: 0.6rem;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.fellowship__main {
+    align-items: flex-start;
+    margin: 1.6rem auto;
+}
+
+.fellowship__main p {
+    font-size: 1.08rem;
+    font-weight: 400;
+    text-align: left;
+    width: 400px;
+}
+
+.fellowship__main img {
+    width: 400px;
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.journey__main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.6rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.journey {
+    width: 200px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.6rem;
+    position: relative;
+}
+
+.journey:not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 144%;
+    height: 2px;
+    background-color: var(--primaryOrange);
+}
+
+.journey:nth-child(odd)::after {
+    transform: rotate(27deg);
+    left: 70px;
+    top: 85px;
+}
+
+.journey:nth-child(even)::after {
+    transform: rotate(-27deg);
+    right: -164px;
+    bottom: 88px;
+}
+
+.journey:nth-child(even) {
+    flex-direction: column-reverse;
+}
+
+.journey span {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 auto;
+    background-color: var(--mainText);
+    color: var(--mainBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid var(--mainBg);
+    outline: 4px solid var(--mainText);
+    position: relative;
+    z-index: 1;
+}
+
+.journey span::after, .journey span::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 2px;
+    background-color: var(--mainText);
+    left: -4px;
+    z-index: -1;
+}
+
+.journey span::before {
+    transform: rotate(90deg);
+}
+
+.journey p {
+    width: 100%;
+    background-color: var(--primaryOrange);
+    text-align: left;
+    padding: 0.8rem;
+    font-size: 0.98rem;
+    font-weight: 400;
+    color: var(--mainBg);
+    border: 2px solid var(--mainBg);
+    outline: 4px solid var(--primaryOrange);
+}
+
+.curriculum__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.2rem auto;
+}
+
+.curriculum__main > img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    width: 144px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.curriculum {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.curriculum.flip {
+    flex-direction: row-reverse;
+}
+
+.curriculum img {
+    width: 320px;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.curriculum p {
+    width: 360px;
+    padding: 1.2rem 1rem;
+    border-radius: 6px;
+    border: 2px solid var(--mainText);
+    background-color: transparent;
+    text-align: center;
+    padding-top: 1.2rem;
+    font-size: 1.24rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.curriculum p span {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    background-color: var(--primaryOrange);
+    padding: 0.4rem 0.8rem;
+    color: var(--mainBg);
+    border-radius: 6px;
+    border: 1px solid var(--mainBg);
+    font-size: 0.8rem;
+}
+
+.program__enrollment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.program__enrollment > img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 6px;
+}
+
+.enrollment__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.enrollment__details button {
+    background-color: transparent;
+    color: var(--primaryOrange);
+    border: 1.5px solid var(--primaryOrange);
+    padding: 0.5rem 2rem;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: color 0.24s ease, background-color 0.24s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .enrollment__details button:is(:hover, :focus-visible) {
+        background-color: var(--primaryOrange);
+        color: var(--mainBg);
+    }
+}
+
+@media all and (max-width: 1164px) {
+    .journey:nth-child(n)::after {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1040px) {
+    .journey__main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .journey:nth-child(n) {
+        width: 100%;
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+
+    .program__hero h1 {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .curriculum:nth-child(n) {
+        flex-direction: column-reverse;
+    }
+
+    .program__enrollment, .fellowship__main {
+        flex-direction: column;
+    }
+
+    .fellowship__main {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .fellowship__main > p {
+        width: 100%;
+    }
+
+    .program__enrollment > img {
+        width: 100%;
+    }
+
+    .curriculum__main {
+        gap: 2rem;
+    }
+
+    .curriculum__main > img {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+    .hero__main {
+        gap: 2rem;
+    }
+
+    .block:nth-child(n) {
+        flex-direction: column-reverse;
+        gap: 0.8rem;
+    }
+
+    .hero__main, .block, .block img {
+        width: 100%;
+    }
+    
+    .fellowship__main p {
+        width: 100%;
+    }
+}
+
+.program__faq {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding: 2.4rem 0.8rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+@media all and (max-width: 600px) {
+    .program__hero, .program__fellowship, .program__journey, .program__curriculum {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .program__hero h1 {
+        width: 100%;
+    }
+        
+    .block__more {
+        gap: 1.12rem;
+    }
+        
+    .block > p, .block__more > p {
+        border-radius: 6px;
+    }
+
+    .program__enrollment {
+        padding: 0.8rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .main__title {
+        font-size: 1.9rem;
+    }
+
+    .sub__title {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .hero__main, .block, .block img, .block p {
+        width: 100%;
+    }
+
+    .block {
+        gap: 0.8rem;
+    }
+
+    .curriculum img, .curriculum p {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 358px) {
+    .journey:nth-child(n) {
+        flex-direction: column;
+    }
+}
