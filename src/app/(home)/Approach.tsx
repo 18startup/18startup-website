@@ -27,7 +27,7 @@ const Approach = () => {
             <div className={`${styles.flex__col} ${styles.approach__details}`}>
                 <h3 className={`${currentApproach === 1 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(1)}}>Experiential Learning</h3>
                 {currentApproach === 1 && <p className={styles.para}>We believe in execution, which leads to the success of your <span>startup</span></p>}
-                <h3 className={`${currentApproach === 2 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(2)}}>Founder-Led Learing</h3>
+                <h3 className={`${currentApproach === 2 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(2)}}>Founder-Led Learning</h3>
                 {currentApproach === 2 && <p className={styles.para}>We believe in execution, which leads to the success of your <span>startup</span></p>}
                 <h3 className={`${currentApproach === 3 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(3)}}>Vibrant Community</h3>
                 {currentApproach === 3 && <p className={styles.para}>We believe in execution, which leads to the success of your <span>startup</span></p>}
