@@ -13,7 +13,7 @@ const faq: {
     {
         id: 1,
         ques: "I'm not a student, can I apply?",
-        ans: 'Yes.'
+        ans: 'Yes, we believe that an entrepreneur should resemble a student who is continuously open to learning and consistently striving to improve. If you are a first-time startup founder or a student entrepreneur, you can apply for the fellowship.'
     },
     {
         id: 2,

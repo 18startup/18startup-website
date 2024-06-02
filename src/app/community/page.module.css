@@ -60,11 +60,11 @@
     width: 50%;
 }
 
-.community__hero button {
+.community__hero a {
     background-color: var(--primaryOrange);
     color: var(--mainBg);
     border: 1.5px solid var(--primaryOrange);
-    padding: 0.7rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     font-family: inherit;
     font-weight: 500;
     font-size: 1rem;
@@ -151,7 +151,7 @@
 }
 
 @media (pointer: fine) and (hover: hover) {
-    .community__hero button:is(:hover, :focus-visible) {
+    .community__hero a:is(:hover, :focus-visible) {
         background-color: var(--mainBg);
         color: var(--primaryOrange);
     }

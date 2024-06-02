@@ -21,7 +21,7 @@ const Community = () => {
       <section className={`${styles.community__hero} ${styles.flex__col}`}>
         <MainTitle t1='18startup' t2='Community' align='center' />
         <p className={styles.para}>Join our vibrant community of over <span>2000 entrepreneurs</span> and connect with like-minded individuals.</p>
-        <button type='button' title='Join Our Community'>Join our Community</button>
+        <a href="https://tally.so/r/wvylB0" rel='noopener noreferrer' target='_blank' title='Join Our Community'>Join our Community</a>
       </section>
 
       {/* Hero */}

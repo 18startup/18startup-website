@@ -7,6 +7,7 @@ import styles from "./page.module.css";
 // Asstes
 import hero1 from "../../../public/objects/home-hero1.jpg";
 import hero2 from "../../../public/objects/home-hero2.jpg";
+import logo from "../../../public/assets/favicon-icon.png";
 import events from "../../../public/objects/home-events.jpg";
 import bootcamp from "../../../public/objects/home-bootcamp.jpg";
 import fellowship from "../../../public/objects/home-fellowship.png";
@@ -61,8 +62,9 @@ const Home = () => {
           </div>
       
           <div className={styles.diff__images}>
-            <Image src={hero1} alt='18startup-Home' width={420} height={400} placeholder='blur' />
-            <Image src={hero2} alt='18startup-Home' width={150} height={150} placeholder='blur' />
+            <Image src={hero1} alt='18startup-Home' width={360} height={360} placeholder='blur' />
+            <Image src={hero2} alt='18startup-Home' width={120} height={120} placeholder='blur' />
+            <Image src={logo} alt='18startup' width={120} height={120}/>
           </div>
 
         </section>
@@ -131,7 +133,7 @@ const Home = () => {
             <div className={styles.program__details}>
               <h3>Startup Fellowship</h3>
               <p  className={styles.para}>Dive into a 14-week intensive startup program where you take your startup idea from the ideation stage to execution.</p>
-              <Link href="/program" title='Read More'>Read More</Link>
+              <Link href="/community" title='Read More'>Read More</Link>
             </div>
             <Image src={fellowship} alt='Startup Fellowship' width={420} height={236} placeholder='blur' />
           </div>
@@ -139,7 +141,7 @@ const Home = () => {
             <div className={styles.program__details}>
               <h3>Startup Bootcamp</h3>
               <p  className={styles.para}>Join us for the 4 days inclusive bootcamp in Goa, where you meet amazing startup folks like you.</p>
-              <Link href="/program" title='Read More'>Read More</Link>
+              <Link href="/community" title='Read More'>Read More</Link>
             </div>
             <Image src={bootcamp} alt='Startup Bootcamps' width={420} height={236} placeholder='blur' />
           </div>
@@ -147,7 +149,7 @@ const Home = () => {
             <div className={styles.program__details}>
               <h3>Startup Events</h3>
               <p  className={styles.para}>Dive into interactive startup events, where you get connected with like-minded people across India.</p>
-              <Link href="/program" title='Read More'>Read More</Link>
+              <Link href="/community" title='Read More'>Read More</Link>
             </div>
             <Image src={events} alt='Startup Events' width={420} height={236} placeholder='blur' />
           </div>

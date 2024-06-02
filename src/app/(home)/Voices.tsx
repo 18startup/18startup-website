@@ -14,7 +14,7 @@ const voices: {
     {
         id: 1,
         name: 'Vamika Singhal',
-        description: "Let's here what Vamika wants to say about 18startup.",
+        description: "Let's hear what Vamika wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/cOGqsSnd4O0?si=ptMpnUDJI6o_shmn'
@@ -23,7 +23,7 @@ const voices: {
     {
         id: 2,
         name: 'Aditya Varma',
-        description: "Let's here what Aditya wants to say about 18startup.",
+        description: "Let's hear what Aditya wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/jHX2QOZUJYU?si=lyOpntR6fUsKZ-Wr'
@@ -32,7 +32,7 @@ const voices: {
     {
         id: 3,
         name: 'Brinda Jallapuram',
-        description: "Let's here what Brinda wants to say about 18startup.",
+        description: "Let's hear what Brinda wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/i56ohtLz4X0?si=oLpMsA5kssYfDrUh'
@@ -41,7 +41,7 @@ const voices: {
     {
         id: 4,
         name: 'Jugal Hemnani',
-        description: "Let's here what Jugal wants to say about 18startup.",
+        description: "Let's hear what Jugal wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/L3UQM8b7NSY?si=hUqcslJOqyTiuU0w'
@@ -50,7 +50,7 @@ const voices: {
     {
         id: 5,
         name: 'Anvitha Sri',
-        description: "Let's here what Anvitha wants to say about 18startup.",
+        description: "Let's hear what Anvitha wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/4U9Vup_XOtM?si=MYk7_ZP7qo0xxwh9'
@@ -59,7 +59,7 @@ const voices: {
     {
         id: 6,
         name: 'Pratyush Gaikwad',
-        description: "Let's here what Pratyush wants to say about 18startup.",
+        description: "Let's hear what Pratyush wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/_ZrRbfDavhw?si=wdzzRJ3mv2IkFJYA'
@@ -68,7 +68,7 @@ const voices: {
     {
         id: 7,
         name: 'Satya Pavan',
-        description: "Let's here what Satya wants to say about 18startup.",
+        description: "Let's hear what Satya wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/4IW75b6QIpE?si=rEhjzqHqFtDMxche'
@@ -77,7 +77,7 @@ const voices: {
     {
         id: 8,
         name: 'Karthik Nagpuri',
-        description: "Let's here what Karthik wants to say about 18startup.",
+        description: "Let's hear what Karthik wants to say about 18startup.",
         youtube: {
             title: '18startup',
             video: 'https://www.youtube.com/embed/qiGxEQLLRbU?si=X4NpQXNB-36xeGHT'

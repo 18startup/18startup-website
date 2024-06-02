@@ -65,11 +65,11 @@ const Program = () => {
       {/* Journey */}
 
       <section className={styles.program__journey}>
-        <MainTitle t1='Jouney with' t2='18startup' type='subhead' align='center' />
+        <MainTitle t1='Journey with' t2='18startup' type='subhead' align='center' />
         <div className={styles.journey__main}>
           <div className={styles.journey}>
             <span>1</span>
-            <p>Enter with execution stage</p>
+            <p>Get into execution mode</p>
           </div>
           <div className={styles.journey}>
             <span>2</span>
@@ -138,7 +138,8 @@ const Program = () => {
       <section className={styles.program__enrollment}>
         <div className={styles.enrollment__details}>
           <MainTitle t1='Enroll Yourself' t2='Today' align='left' type='subhead' />
-          <button type='button' title='Apply Now'>Apply Now</button>
+          <p>Embark on a 14-week inclusive journey where you will learn, build, and launch with the guidance of mentors and valuable market connections.</p>
+          <a href='https://tally.so/r/w4xDQd' rel='noopener noreferrer' target='_blank' title='Apply Now'>Apply Now</a>
         </div>
         <Image src={enroll} width={400} height={224} placeholder='blur' alt='Enroll Now' />
       </section>

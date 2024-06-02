@@ -98,11 +98,33 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;   
+    align-items: flex-start;
+}
+
+.diff__images::after {
+    position: absolute;
+    content: '';
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fdc12ad1;
+    left: 20px;
+    top: 10px;
+}
+
+.diff__images::before {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f58133a3;
+    right: 30px;
+    bottom: 10px;
 }
 
 .diff__images img:nth-child(1) {
-    width: 300px;
+    width: 360px;
     max-width: 100%;
     height: auto;
     aspect-ratio: 1;
@@ -112,16 +134,28 @@
 }
 
 .diff__images img:nth-child(2) {
-    width: 150px;
+    width: 108px;
     aspect-ratio: 1;
     height: auto;
     object-fit: cover;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
-    right: -80px;
-    outline: 5px solid var(--mainBg);
+    bottom: 20px;
+    left: 10px;
     background: linear-gradient(181deg, #FFFFFF 5%, #fed9898d 34%, #d2b77c7c 64%, #f374355e 90%);
+}
+
+.diff__images img:nth-child(3) {
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 108px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: 0.4rem;
+    top: -20px;
+    right: -10px;
 }
 
 .home__from, .home__programs, .home__way {
@@ -673,19 +707,6 @@
         width: 100%;
     }
 
-    .diff__images img:nth-child(2) {
-        left: -50px;
-        top: -30px;
-    }
-
-    .diff__images img:nth-child(1) {
-        width: 270px;
-    }
-
-    .diff__images img:nth-child(2) {
-        width: 120px;
-    }
-
     .voices__main, .approach__main {
         flex-direction: column-reverse;
         align-items: center;
@@ -817,15 +838,33 @@
         padding: 1.6rem 0.6rem;
     }
 
+    .home__hero {
+        gap: 2.6rem;
+        padding-top: 3.6rem;
+    }
+
     .diff__images {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .diff__images img:nth-child(1) {
+        width: 300px;
+    }
+
+    .diff__images img:nth-child(2), .diff__images img:nth-child(3) {
+        width: 90px;
+    }
+
     .diff__images img:nth-child(2) {
-        left: 70px;
-        top: 130px;
+        bottom: 10px;
+        left: 0px;
+    }
+
+    .diff__images img:nth-child(3) {
+        top: -12px;
+        right: -10px;
     }
 
     .from__main > img {
