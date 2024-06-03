@@ -137,17 +137,86 @@
     background: linear-gradient(181deg, #FFFFFF 5%, #fed9898d 34%, #d2b77c7c 64%, #f374355e 90%);;
 }
 
-.blog__desc p {
+.main__desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 0.4rem;
+}
+
+.main__desc h2, .main__desc h3, .main__desc h4, .main__desc h5, .main__desc h6 {
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    color: var(--mainText);
+}
+
+.main__desc h2 {
+    font-size: 1.7rem;
+}
+
+.main__desc h3 {
+    font-size: 1.5rem;
+}
+
+.main__desc h4 {
+    font-size: 1.36rem;
+}
+
+.main__desc h5 {
+    font-size: 1.2rem;
+}
+
+.main__desc h6 {
+    font-size: 1.08rem;
+}
+
+.main__desc p {
     width: 100%;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.99rem;
     color: var(--mainText);
+    font-weight: 400;
+}
+
+.main__desc ul, .main__desc ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding-left: 2rem;
+}
+
+.main__desc ul li, .main__desc ol li {
+    font-size: 0.92rem;
+    font-weight: 400;
+    text-align: left;
+    color: var(--mainText);
+}
+
+.main__desc a {
+    color: var(--primaryOrange);
+    outline: none;
+    font-size: 0.97rem;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
 }
 
 @media (pointer: fine) and (hover: hover) {
     .blog__head > a:is(:hover, :focus-visible) {
         color: var(--mainBg);
         background-color: var(--primaryOrange);
+    }
+
+    .main__desc a:is(:hover, :focus-visible) {
+        text-decoration: underline;
     }
 }
 

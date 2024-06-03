@@ -9,6 +9,9 @@ import { IoArrowBack } from "react-icons/io5";
 // Actions
 import { getABlogBySlug } from '@/actions/blogs';
 
+// Assets
+import dummyblog from "../../../../public/assets/dummyblog.jpg";
+
 // Utils
 import SadIcon from '@/utils/Icons';
 import wordsPerMinute from '@/utils/wordsPerPinute';
@@ -36,15 +39,15 @@ const BlogPost = async ({params}: {params: {blogpost: string}}) => {
         <div className={styles.blog__details}>
           <div className={styles.more__details}>
             <p>Written by <span>{blogDetails.authorName ? blogDetails.authorName : '18startup'}</span></p>
-            <p>~ {wordsPerMinute(blogDetails.description)} Min Read</p>
+            <p>Approx {wordsPerMinute(blogDetails.description)} Min Read</p>
           </div>
           <p>Published on <span>{new Date(blogDetails.updatedAt ? blogDetails.updatedAt : '0').toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: '2-digit', timeZone: 'IST'})}</span></p>
         </div>
       </div>
 
       <div className={styles.blog__desc}>
-        <Image src={blogDetails.coverImage} alt={blogDetails.title} width={700} height={520} />
-        <p>{blogDetails.description ? blogDetails.description : 'Not much description provided!'}</p>
+        <Image src={blogDetails.coverImage ? blogDetails.coverImage : dummyblog} alt={blogDetails.title} width={700} height={520} />
+        <div className={styles.main__desc} dangerouslySetInnerHTML={{ __html: blogDetails.description ? blogDetails.description.replaceAll('<p><br></p>', '') : '<p>No description!</p>' }}></div>
       </div>
 
     </article>

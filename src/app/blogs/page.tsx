@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import styles from "./page.module.css";
 
 // Assets
-import pic from "../../../public/program/hero1.png";
+import dummyBlog from "../../../public/assets/dummyblog.jpg";
 
 // Components
 import AllBlogs from './ui/Blogs/Blogs';
@@ -48,7 +48,7 @@ const Blogs = async () => {
         <div className={styles.main__blog}>
           <h1><span>Discover our</span> latest blogs</h1>
           <Link href={`/blogs/${allBlogs[0].slug}`} className={styles.top__blog}>
-            <Image src={allBlogs[0].coverImage} alt="Blog Post" width={540} height={320} />
+            <Image src={allBlogs[0].coverImage ? allBlogs[0].coverImage : dummyBlog} alt="Blog Post" width={540} height={320} />
             <div className={styles.blog__details}>
               <h3>{allBlogs[0].title}</h3>
               <p>{allBlogs[0].overview ? allBlogs[0].overview : 'No overview...'}</p>
