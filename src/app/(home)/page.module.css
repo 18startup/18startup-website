@@ -101,17 +101,6 @@
     align-items: flex-start;
 }
 
-.diff__images::after {
-    position: absolute;
-    content: '';
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: #fdc12ad1;
-    left: 20px;
-    top: 10px;
-}
-
 .diff__images::before {
     position: absolute;
     content: '';
