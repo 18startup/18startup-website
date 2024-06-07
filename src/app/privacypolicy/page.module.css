@@ -1,0 +1,69 @@
+.policy {
+    width: 1400px;
+    max-width: 100%;
+    padding: 1.2rem;
+    margin: 1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.policy h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--primaryOrange);
+    text-align: left;
+}
+
+.policy h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--mainText);
+    text-align: left;
+}
+
+.policy p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--mainText);
+}
+
+.policy p a {
+    color: var(--primaryOrange);
+}
+
+.policy p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.policy ol, .policy ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.policy ol li, .policy ul li {
+    margin-left: 2rem;
+    color: var(--mainText);
+    font-size: 0.98rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+@media all and (max-width: 600px) {
+    .policy ol li, .policy ul li {
+        margin-left: 1.2rem;
+    }
+
+    .policy {
+        padding: 0.8rem;
+    }
+}

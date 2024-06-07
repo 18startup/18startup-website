@@ -28,8 +28,8 @@ const Footer = () => {
           </div>
 
           <div className={styles.footer__menu}>
-            <h4>Policies</h4>
-            <Link href="/faq" title="FAQ's" aria-label="FAQ's">FAQ&#39;s</Link>
+            <h4>Others</h4>
+            <Link href="/privacypolicy" title="Privacy Policy" aria-label="Privacy Policy">Privacy Policy</Link>
             <Link href="/terms" title='Terms & Conditions' aria-label='Terms & Conditions'>Terms & Conditions</Link>
           </div>
 

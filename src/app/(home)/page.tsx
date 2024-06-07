@@ -42,6 +42,7 @@ import { HiOutlineGlobeEuropeAfrica } from "react-icons/hi2";
 import Voices from './Voices';
 import Approach from './Approach';
 import Faq from '@/components/Faq/Faq';
+import StatCounter from '@/components/StatCounter/StatCounter';
 
 export const metadata: Metadata = {
   title: "Home | 18startup",
@@ -203,22 +204,22 @@ const Home = () => {
         <div className={styles.stats__main}>
           <div className={styles.stat}>
             <Image src="/assets/stats1.svg" alt='Community' width={48} height={48} />
-            <h3>2000+</h3>
+            <h3><StatCounter stat={2000} />+</h3>
             <p>Community</p>
           </div>
           <div className={styles.stat}>
             <Image src="/assets/stats2.svg" alt='Impacted' width={48} height={48} />
-            <h3>50+</h3>
+            <h3><StatCounter stat={50} />+</h3>
             <p>Entrepreneurs Impacted</p>
           </div>
           <div className={styles.stat}>
             <Image src="/assets/stats3.svg" alt='Mentors' width={48} height={48} />
-            <h3>30+</h3>
+            <h3><StatCounter stat={30} />+</h3>
             <p>Mentors</p>
           </div>
           <div className={styles.stat}>
             <Image src="/assets/stats4.svg" alt='Startup events' width={48} height={48} />
-            <h3>10+</h3>
+            <h3><StatCounter stat={10} />+</h3>
             <p>Startup Events</p>
           </div>
         </div>
