@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Metadata } from 'next';
 import styles from "./page.module.css";
 
+// Assets
+import enroll from "../../../public/objects/program-enroll.jpg";
+
 // Types
 import { CommunityEventType } from '@/types';
 import { communityEvents } from '@/constants';
@@ -42,6 +45,19 @@ const Community = () => {
       </section>
 
       {/* Events */}
+
+      {/* Enrollment */}
+
+      <section className={styles.program__enrollment}>
+        <div className={styles.enrollment__details}>
+          <MainTitle t1='Never miss any' t2='opportunity' align='left' type='subhead' />
+          <p>Join our vibrant WhatsApp community and connect with entrepreneurs across India. Also, all updates regarding the above-mentioned events will be shared within the WhatsApp community.</p>
+          <a href='https://tally.so/r/wvylB0' rel='noopener noreferrer' target='_blank' title='Join our Community'>Join our Community</a>
+        </div>
+        <Image src={enroll} width={400} height={224} placeholder='blur' alt='Enroll Now' />
+      </section>
+
+      {/* Enrollment */}
 
     </div>
   )

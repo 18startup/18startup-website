@@ -30,7 +30,7 @@
 }
 
 .main__title {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     color: var(--mainText);
     font-weight: 700;
 }
@@ -67,11 +67,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 1.2rem;
+    gap: 1.2rem; 
 }
 
 .hero__details h1 {
-    width: 420px;
+    width: max(420px, 80%);
     max-width: 100%;
 }
 
@@ -720,7 +720,7 @@
     .way__stroke {
         width: 100%;
         height: 2px;
-        transform: rotate(4deg);
+        transform: translateY(-16px) rotate(-3deg);
     }
 
     .way, .way ul {

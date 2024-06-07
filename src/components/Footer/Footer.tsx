@@ -35,8 +35,9 @@ const Footer = () => {
 
           <div className={styles.footer__menu}>
             <h4>Contact us</h4>
-            <a href="mailto: abc@mail.com" title='Send Mail' aria-label='Send Mail'>abc@mail.com</a>
-            <a href="tel: +91 9289728682" title="Call Us" aria-label="Call Us">+91 9992999992</a>
+            <a href="mailto: info@18startup.com" title='Send Mail' aria-label='Send Mail'>info@18startup.com</a>
+            <a href="tel: +918886956636" title="Call Us" aria-label="Call Us">+91 8886956636</a>
+            <a href="tel: +917989002484" title="Call Us" aria-label="Call Us">+91 7989002484</a>
           </div>
 
         </div>

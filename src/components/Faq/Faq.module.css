@@ -90,6 +90,26 @@
   font-weight: 400;
 }
 
+.ans div > ol {
+  margin-top: 0.8rem;
+}
+
+.ans div ol li, .ans div p {
+  color: var(--mainText);
+  font-size: 0.96rem;
+  height: 100%;
+  font-weight: 400;
+}
+
+.ans div > ol li {
+  margin-left: 1.2rem;
+}
+
+.ans div ol ol li {
+  margin-left: 2rem;
+  list-style-type: lower-alpha;
+}
+
 .shadow__center {
   -webkit-animation: shadow-drop-2-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

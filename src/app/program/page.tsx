@@ -56,7 +56,7 @@ const Program = () => {
         <MainTitle t1='18startup' t2='Fellowship Program' type='subhead' align='center' />
         <div className={styles.fellowship__main}>
           <Image src={fellowship} width={400} height={224} placeholder='blur' alt='Fellowship Program'/>
-          <p>Embark on a thrilling 14-week adventure! Gain essential skills, mentorship, and financial support for startup success. Founder-led, project-based learning with pathways for problem identification and a vibrant community will help you in your startup journey.</p>
+          <p>Embark on a thrilling <span style={{ color: 'var(--primaryOrange)' }}>14-week adventure! Gain essential skills, mentorship, and financial support for startup success.</span> Founder-led, project-based learning with pathways for problem identification and a vibrant community will help you in your startup journey.</p>
         </div>
       </section>
 

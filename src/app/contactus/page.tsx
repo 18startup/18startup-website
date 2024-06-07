@@ -37,6 +37,7 @@ const Contactus = () => {
           <div className={styles.detail}>
             <IoCallSharp fontSize={28} color='var(--primaryOrange)' />
             <h4>Get in Touch</h4>
+            <p>+91 8886956636</p>
             <p>+91 7989002484</p>
           </div>
           <div className={styles.detail}>

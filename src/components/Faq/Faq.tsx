@@ -23,17 +23,17 @@ const faq: {
     {
         id: 3,
         ques: 'Can I join the fellowship, without coming to bootcamp?',
-        ans: 'No.'
+        ans: 'No. The bootcamp is themed around self discovery and founding team discovery. We believe that these are foundational skills that need personal interaction for effective grasping.'
     },
     {
         id: 4,
         ques: 'What is the fees for the fellowship?',
-        ans: 'Rs. 20,000/-'
+        ans: 'The Fellowship Course fee is Rs. 20,000/- exclusive of taxes.'
     },
     {
         id: 5,
         ques: 'What is the fees for bootcamp?',
-        ans: 'Rs. 8,000/-'
+        ans: 'The Bootcamp participation fee is currently Rs. 10,000/- exclusive of taxes. '
     },
     {
         id: 6,
@@ -43,7 +43,7 @@ const faq: {
     {
         id: 7,
         ques: 'What is the nature of financial aid?',
-        ans: 'Need-based scholarship & Payment in installments.'
+        ans: 'We have 2 options for financial aid:<br><ol><li>Need-based scholarship for economically challenged students. This is provided by entrepreneurs who have instituted grants for helping promote entrepreneurship. If the candidate has merit and will not be able to join only because they cannot afford the fees, they shall be supported partially by such grants.</li><li>Staggered payment: The candidates have the option of paying the fees as below <ol><li>Rs. 10,000/- at the time of admission</li><li>Rs. 6,000/- at the end of bootcamp</li><li>Rs. 5,000/- at the end of 4th session</li></ol></li></ol>'
     },
 ]
 
@@ -79,7 +79,7 @@ const Faq = () => {
                                 <span className={`${selectedFaq === item.id ? styles.active : ''}`}><MdOutlineCancel fontSize={17} /></span>
                             </div>
                             <div className={`${styles.ans} ${styles.shadow__center} ${selectedFaq === item.id ? styles.active : ''}`}>
-                                <p>{item.ans}</p>
+                                {item.id !== 7 ? <p>{item.ans}</p> : <div dangerouslySetInnerHTML={{ __html: item.ans }}></div>}
                             </div>
                         </div>
                     )

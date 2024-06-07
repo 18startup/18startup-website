@@ -56,7 +56,7 @@ const Home = () => {
 
       <section className={`${styles.home__hero} ${styles.flex__row}`}>
           <div className={styles.hero__details}>
-            <MainTitle t1='Start building your' t2='Startup while in college' align='left' type='head' />
+            <MainTitle t1='Start building your' t2='startup while in college' align='left' type='head' />
             <p className={styles.para}>18startup equips aspiring entrepreneurs with the skills to transform their ideas into investable ventures, making them capable of success.</p>
             <a href="https://tally.so/r/w4xDQd" rel='noopener noreferrer' target='_blank' title='Apply Now'>Apply Now</a>
           </div>
@@ -82,7 +82,7 @@ const Home = () => {
             <Link href="/aboutus" title='Learn more'>Learn more</Link>
           </div>
 
-          <iframe width="480" height="270" src="https://www.youtube.com/embed/xPHoVNAFSiw?si=LHSBhwi-7PPuHkDe" title="Why 18startup?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          <iframe width="480" height="270" src="https://www.youtube.com/embed/vEfwA3qwcPA?si=wBOgUb2KjHYI4aaR" title="Why 18startup?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
         </div>
         <Image src="/assets/curve.svg" alt='Curve' width={700} height={120} />
