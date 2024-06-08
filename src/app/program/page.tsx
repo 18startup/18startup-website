@@ -157,7 +157,7 @@ const Program = () => {
 
     </div>
   )
-}
+};
 
 export default Program;
 
