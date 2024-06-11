@@ -306,6 +306,14 @@
     }
 }
 
+@media all and (max-width: 900px) {
+    .partner__images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        order: 2;
+    }
+}
+
 @media all and (max-width: 850px) {
     .whatwhy__content {
         width: 100%;
@@ -337,6 +345,7 @@
 }
 
 @media all and (max-width: 700px) {
+
     .aboutus__center {
         gap: 1.2rem;
     }
@@ -353,12 +362,6 @@
         aspect-ratio: 16/9;
     }
 
-    .partner__images {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        order: 2;
-    }
-
     .partner__images img {
         width: 100%;
     }
@@ -370,6 +373,18 @@
 
 @media all and (max-width: 500px) {
 
+    .hero__images {
+        order: 1;
+    }
+
+    .aboutus__hero h1 {
+        order: 2;
+    }
+
+    .aboutus__hero p {
+        order: 3;
+    }
+
     .main__title {
         font-size: 1.9rem;
     }
@@ -378,7 +393,7 @@
         font-size: 1.5rem;
     }
 
-    .hero__images, .feature__images, .vision__images, .partner__images {
+    .hero__images, .feature__images, .vision__images {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -391,16 +406,29 @@
         height: 100%;
     }
 
+    .image {
+        width: 144px;
+        padding: 0.2rem;
+    }
+
     .image img {
-        width: 200px;
+        width: 100%;
         height: auto;
         aspect-ratio: 16/9;
+    }
+
+    .aboutus__vision {
+        flex-direction: column-reverse;
     }
 
     .hero__images img, .vision__images img {
         width: 100%;
         height: auto;
         aspect-ratio: 16/9;
+    }
+
+    .vision__images img:nth-child(1) {
+        display: none;
     }
 
     .partner__images  img:last-child {
@@ -419,6 +447,9 @@
         object-position: 50%;
     }
     
+    .vision__details p {
+        text-align: left;
+    }
 }
 
 @media all and (max-width: 450px) {
@@ -437,6 +468,8 @@
         height: auto;
         aspect-ratio: 9/10.5;
     }
+
+
 }
 
 @media all and (max-width: 350px) {

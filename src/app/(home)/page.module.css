@@ -30,7 +30,7 @@
 }
 
 .main__title {
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: var(--mainText);
     font-weight: 700;
 }
@@ -71,8 +71,7 @@
 }
 
 .hero__details h1 {
-    width: max(420px, 80%);
-    max-width: 100%;
+    width: 100%;
 }
 
 .hero__details p {
@@ -196,6 +195,7 @@
 }
 
 .way h3 {
+    width: 124px;
     background-color: var(--mainBg);
     color: var(--primaryOrange);
     padding: 0.5rem 1.6rem;

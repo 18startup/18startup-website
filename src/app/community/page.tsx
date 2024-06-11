@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import styles from "./page.module.css";
 
 // Assets
-import enroll from "../../../public/objects/program-enroll.jpg";
+import enroll from "../../../public/objects/community-enroll.jpg";
 
 // Types
 import { CommunityEventType } from '@/types';

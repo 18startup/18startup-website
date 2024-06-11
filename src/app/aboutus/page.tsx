@@ -18,6 +18,7 @@ import member3 from "../../../public/objects/about-team3.jpeg";
 import partner1 from "../../../public/objects/about-partner1.png";
 import partner2 from "../../../public/objects/about-partner2.png";
 import partner3 from "../../../public/objects/about-partner3.png";
+import partner4 from "../../../public/objects/about-partner4.png";
 
 // Components
 import StatCounter from '@/components/StatCounter/StatCounter';
@@ -166,6 +167,9 @@ const Aboutus = () => {
           </div>
           <div className={styles.image}>
             <Image src={partner3} alt='Partner' width={180} height={90} />
+          </div>
+          <div className={styles.image}>
+            <Image src={partner4} alt='Partner' width={180} height={90} />
           </div>
         </div>
       </section>

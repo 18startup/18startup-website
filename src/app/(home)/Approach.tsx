@@ -28,9 +28,9 @@ const Approach = () => {
                 <h3 className={`${currentApproach === 1 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(1)}}>Experiential Learning</h3>
                 {currentApproach === 1 && <p className={styles.para}>We believe in execution, which leads to the success of your <span>startup</span></p>}
                 <h3 className={`${currentApproach === 2 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(2)}}>Founder-Led Learning</h3>
-                {currentApproach === 2 && <p className={styles.para}>We believe in execution, which leads to the success of your <span>startup</span></p>}
+                {currentApproach === 2 && <p className={styles.para}>Founders with experience in building startups can offer <span>valuable insights.</span></p>}
                 <h3 className={`${currentApproach === 3 ? styles.approach__active : ''}`} role='button' onClick={() => {setCurrentApproach(3)}}>Vibrant Community</h3>
-                {currentApproach === 3 && <p className={styles.para}>We believe in execution, which leads to the success of your <span>startup</span></p>}
+                {currentApproach === 3 && <p className={styles.para}>Get the most out of <span>peer support</span>, which will help you on your startup journey.</p>}
             </div>
 
             <Image src={currentApproach === 1 ? experientiallearning : currentApproach === 2 ? founderled : vibrantcommunity} width={480} height={270} placeholder='blur' alt='Approach' />

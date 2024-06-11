@@ -79,7 +79,7 @@ const Home = () => {
 
           <div className={`${styles.flex__col} ${styles.why__details}`}>
             <MainTitle t1='Why' t2='18startup?' align='left' type='subhead' />
-            <p className={styles.para}>We&#39;re not just teaching entrepreneurship, we&#39;re your partners in crafting a career of innovation and success. With <span>founder-led learning, hands-on mentorship, and a vibrant community</span>, we transform your journey into a powerhouse of skills, ensuring you stand out in the entrepreneurial landscape</p>
+            <p className={styles.para}>With <span>founder-led learning, hands-on mentorship, and a vibrant community</span>, we transform your journey into a powerhouse of skills.</p>
             <Link href="/aboutus" title='Learn more'>Learn more</Link>
           </div>
 
@@ -99,7 +99,7 @@ const Home = () => {
           <div className={`${styles.way__before} ${styles.way}`}>
             <h3>Before</h3>
             <ul>
-              <li><FaRegLightbulb fontSize={18} /><span>Ideation Stage</span></li>
+              <li><FaRegLightbulb fontSize={18} /><span>Stuck in the ideation Stage</span></li>
               <li><MdOutlineCancel fontSize={18} /><span>No Mentorship/Guidance</span></li>
               <li><MdOutlineCancel fontSize={18} /><span>No Market Connections</span></li>
               <li><MdOutlineCancel fontSize={18} /><span>No Prototype/MVP</span></li>
@@ -111,7 +111,7 @@ const Home = () => {
           <div className={`${styles.way__before} ${styles.way}`}>
             <h3>After</h3>
             <ul>
-              <li><TbSettingsCog fontSize={18} /><span>Execution Stage</span></li>
+              <li><TbSettingsCog fontSize={18} /><span>Get into execution mode</span></li>
               <li><IoFlag fontSize={18} /><span>Access to domain experts</span></li>
               <li><HiOutlineGlobeEuropeAfrica fontSize={18} /><span>Get possible market connections</span></li>
               <li><IoCheckmarkOutline fontSize={18} /><span>Build prototype with tech credits</span></li>
@@ -134,7 +134,7 @@ const Home = () => {
             <div className={styles.program__details}>
               <h3>Startup Fellowship</h3>
               <p  className={styles.para}>Dive into a 14-week intensive startup program where you take your startup idea from the ideation stage to execution.</p>
-              <Link href="/community" title='Read More'>Read More</Link>
+              <Link href="/program" title='Read More'>Read More</Link>
             </div>
             <Image src={fellowship} alt='Startup Fellowship' width={420} height={236} placeholder='blur' />
           </div>
@@ -142,7 +142,7 @@ const Home = () => {
             <div className={styles.program__details}>
               <h3>Startup Bootcamp</h3>
               <p  className={styles.para}>Join us for the 4 days inclusive bootcamp in Goa, where you meet amazing startup folks like you.</p>
-              <Link href="/community" title='Read More'>Read More</Link>
+              <Link href="/program" title='Read More'>Read More</Link>
             </div>
             <Image src={bootcamp} alt='Startup Bootcamps' width={420} height={236} placeholder='blur' />
           </div>
