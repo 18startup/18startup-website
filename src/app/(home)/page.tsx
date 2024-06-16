@@ -179,6 +179,21 @@ const Home = () => {
           <Image src={CMR} title='CMR' alt='CMR' width={90} height={90} />
           <Image src={Viacom} title='Viacom' alt='Viacom' width={90} height={90} />
           <Image src={IIM} title='IIM' alt='IIM Banglore' width={90} height={90} />
+          <Image src={IIT} title='IIT' alt='IIT Kharagpur' width={90} height={90} />
+          <Image src={BITS} title='BITS' alt='BITS Pilani Hyd' width={90} height={90} />
+          <Image src={NIT} title='NIT' alt='NIT Tirchy' width={90} height={90} />
+          <Image src={ChristUniv} title='Christ University' alt='ChristUniv' width={90} height={90} />
+          <Image src={MallaReddy} title='Malla Reddy University' alt='MallaReddy' width={90} height={90} />
+          <Image src={JNTUH} title='JNTUH' alt='JNTUH' width={90} height={90} />
+          <Image src={VIT} title='VIT' alt='VIT' width={90} height={90} />
+          <Image src={SRM} title='SRM' alt='SRM' width={90} height={90} />
+          <Image src={ISBR} title='ISBR' alt='ISBR' width={90} height={90} />
+          <Image src={VBIT} title='VBIT' alt='VBIT' width={90} height={90} />
+          <Image src={IARE} title='IARE' alt='IARE' width={90} height={90} />
+          <Image src={MLR} title='MLR' alt='MLR' width={90} height={90} />
+          <Image src={CMR} title='CMR' alt='CMR' width={90} height={90} />
+          <Image src={Viacom} title='Viacom' alt='Viacom' width={90} height={90} />
+          <Image src={IIM} title='IIM' alt='IIM Banglore' width={90} height={90} />
         </div>
       </section>
 
