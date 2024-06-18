@@ -356,11 +356,12 @@
         flex-direction: column-reverse;
     }
 
-    .program__enrollment, .fellowship__main {
-        flex-direction: column;
+    .program__enrollment {
+        flex-direction: column-reverse;
     }
 
     .fellowship__main {
+        flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -455,7 +456,7 @@
 
 @media all and (max-width: 400px) {
 
-    .hero__main, .block, .block img, .block p {
+    .hero__main, .block, .block img, .block p, .block__more p, .block__more {
         width: 100%;
     }
 

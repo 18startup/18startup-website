@@ -14,8 +14,8 @@ const ContactForm = () => {
             <input type="email" placeholder='Enter your email' title='Provide your email address' required id='email' name='email' aria-required />
         </div>
         <div className={styles.form__input}>
-            <label htmlFor="company">Company Name<span>*</span></label>
-            <input type="text" placeholder='Enter company name' title='Provide your company name' required id='company' name='company' aria-required />
+            <label htmlFor="contact">Contact Number<span>*</span></label>
+            <input type="text" placeholder='Enter contact number' pattern="^[0-9+\s]*$" title='Provide your contact number' required id='contact' name='contact' aria-required />
         </div>
         <div className={styles.form__input}>
             <label htmlFor="info">Extra Information</label>

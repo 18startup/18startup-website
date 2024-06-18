@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import { FaInstagram } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { BsGlobeCentralSouthAsia } from "react-icons/bs";
-import { FaFacebook, FaMapLocationDot, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaMapLocationDot, FaXTwitter } from "react-icons/fa6";
 
 // Components
 import ContactForm from './ContactForm';
@@ -24,7 +24,7 @@ const Contactus = () => {
 
       <section className={`${styles.contact__hero}`}>
         <h1>Contact <span>Us</span></h1>
-        <p className={styles.para}>Join our vibrant community of over <span>2000 entrepreneurs</span> and connect with like-minded individuals.</p>
+        <p className={styles.para}>If you have any queries, feel free to <span>reach out to us.</span> We are always here to help you!</p>
       </section>
 
       {/* Head */}
@@ -49,9 +49,9 @@ const Contactus = () => {
             <BsGlobeCentralSouthAsia fontSize={28} color='var(--primaryOrange)' />
             <h4>Social Media</h4>
             <div className={styles.media}>
-              <a href='#' rel='noopener noreferrer' title='Instagram' aria-label='Instagram'><FaInstagram fontSize={22} /></a>
-              <a href='#' rel='noopener noreferrer' title='X (formerly Twitter)' aria-label='X (formerly Twitter)'><FaXTwitter fontSize={22} /></a>
-              <a href='#' rel='noopener noreferrer' title='Facebook' aria-label='Facebook'><FaFacebook fontSize={22} /></a>
+              <a href="https://x.com/18startup_" rel='noopener noreferrer' title='Open X (Former Twitter)' aria-label="Open X (Former Twitter)"><FaXTwitter fontSize={24}/></a>
+              <a href="https://instagram.com/18startup" rel='noopener noreferrer' title='Open Instagram' aria-label="Open Instagram"><FaInstagram fontSize={24}/></a>
+              <a href="https://www.linkedin.com/company/18startup/?viewAsMember=true" rel='noopener noreferrer' title='Open LinkedIn' aria-label="Open LinkedIn"><FaLinkedin fontSize={24}/></a>
             </div>
           </div>
         </div>

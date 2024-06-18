@@ -263,7 +263,7 @@
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
     -webkit-user-drag: none;
-    animation: infiniteScroll 15s linear infinite;
+    animation: infiniteScroll 18s linear infinite;
 }
 
 @keyframes infiniteScroll {
@@ -273,7 +273,7 @@
     }
 
     100% {
-        transform: translate(calc(-90px * 20.12));
+        transform: translate(calc(-90px * 20.1));
     }
 }
 
@@ -881,6 +881,11 @@
 
     .from__main > img {
         width: 108px;
+    }
+
+    .home__approach > p, .home__stats > p {
+        width: 100%;
+        text-align: left;
     }
 
 }

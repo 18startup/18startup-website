@@ -373,27 +373,37 @@
 
 @media all and (max-width: 500px) {
 
+    .feature__images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        order: 2;
+    }
+
     .hero__images {
         order: 1;
     }
 
     .aboutus__hero h1 {
         order: 2;
+        text-align: left !important;
     }
 
     .aboutus__hero p {
+        width: 100%;
         order: 3;
+        text-align: left;
     }
 
     .main__title {
         font-size: 1.9rem;
+        text-align: left !important;
     }
 
     .sub__title {
         font-size: 1.5rem;
     }
 
-    .hero__images, .feature__images, .vision__images {
+    .hero__images, .vision__images {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -407,7 +417,7 @@
     }
 
     .image {
-        width: 144px;
+        width: 160px;
         padding: 0.2rem;
     }
 
@@ -472,9 +482,13 @@
 
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 370px) {
 
     .team img {
         width: 100%;
+    }
+
+    .image {
+        width: 144px;
     }
 }

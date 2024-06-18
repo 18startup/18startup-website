@@ -236,7 +236,7 @@
     }
 
     .program__enrollment {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .enrollment__details {

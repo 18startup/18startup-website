@@ -46,7 +46,7 @@ const Blogs = async () => {
       <section className={styles.recent__blogs}>
 
         <div className={styles.main__blog}>
-          <h1><span>Discover our</span> latest blogs</h1>
+          <h1>Discover our <span>latest blogs</span></h1>
           <Link href={`/blogs/${allBlogs[0].slug}`} className={styles.top__blog}>
             <Image src={allBlogs[0].coverImage ? allBlogs[0].coverImage : dummyBlog} alt="Blog Post" width={540} height={320} />
             <div className={styles.blog__details}>

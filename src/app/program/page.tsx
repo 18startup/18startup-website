@@ -9,6 +9,7 @@ import hero2 from "../../../public/objects/program-hero2.jpg";
 import hero3 from "../../../public/objects/program-hero3.jpg";
 import fellowship from "../../../public/objects/program-fellowship.jpg";
 import enroll from "../../../public/objects/program-enroll.jpg";
+import bootcamp from "../../../public/objects/program-bootcamp.jpg"; 
 
 // Components
 import Faq from '@/components/Faq/Faq';
@@ -61,6 +62,18 @@ const Program = () => {
       </section>
 
       {/* Fellowship */}
+
+      {/* Enrollment */}
+
+      <section className={styles.program__enrollment}>
+        <div className={styles.enrollment__details}>
+          <MainTitle t1='18startup' t2='Bootcamp' align='left' type='subhead' />
+          <p>Connect with like-minded individuals, mentors, investors, and industry experts who can help you on your startup journey. You can also <span>find a potential co-founder or teammate.</span> Additionally, Engage in self-discovery activities to identify your passion before starting your startup journey.</p>
+        </div>
+        <Image src={bootcamp} width={400} height={224} placeholder='blur' alt='18startup Bootcamp' />
+      </section>
+
+      {/* Enrollment */}
 
       {/* Journey */}
 

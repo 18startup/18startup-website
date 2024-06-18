@@ -33,7 +33,7 @@
     font-weight: 700;
 }
 
-.contact__hero h1 span {
+.contact__hero h1 span, .contact__hero p span {
     color: var(--primaryOrange);
 }
 

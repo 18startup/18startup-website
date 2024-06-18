@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 // React Icons
-import { FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaLinkedin, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 
 const Footer = () => {
 
@@ -45,9 +45,10 @@ const Footer = () => {
         <div className={styles.footer__right}>
 
           <div className={styles.social__media}>
+            <a href="https://www.youtube.com/@18Startup_" rel='noopener noreferrer' title='Open Youtube Channel' aria-label="Open Youtube Channel"><FaYoutube fontSize={24}/></a>
             <a href="https://x.com/18startup_" rel='noopener noreferrer' title='Open X (Former Twitter)' aria-label="Open X (Former Twitter)"><FaXTwitter fontSize={24}/></a>
-            <a href="https://instagram.com/18startup" rel='noopener noreferrer' title='Open Instagram' aria-label="Open Instagram"><FaInstagram fontSize={24}/></a>
             <a href="https://www.linkedin.com/company/18startup/?viewAsMember=true" rel='noopener noreferrer' title='Open LinkedIn' aria-label="Open LinkedIn"><FaLinkedin fontSize={24}/></a>
+            <a href="https://instagram.com/18startup" rel='noopener noreferrer' title='Open Instagram' aria-label="Open Instagram"><FaInstagram fontSize={24}/></a>
           </div>
 
           <p>Antah Prerna Education Private Limited, Office Address: 55, Raju Naidu Road, Tatabad, Coimbatore – 641012</p>
