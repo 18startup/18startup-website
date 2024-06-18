@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="https://x.com/18startup_" rel='noopener noreferrer' title='Open X (Former Twitter)' aria-label="Open X (Former Twitter)"><FaXTwitter fontSize={24}/></a>
           <a href="https://www.linkedin.com/company/18startup/?viewAsMember=true" rel='noopener noreferrer' title='Open LinkedIn' aria-label="Open LinkedIn"><FaLinkedin fontSize={24}/></a>
           <a href="https://instagram.com/18startup" rel='noopener noreferrer' title='Open Instagram' aria-label="Open Instagram"><FaInstagram fontSize={24}/></a>
-          <a href="tel: +918639260889" rel='noopener noreferrer' title='Chat with us via Whatsapp' aria-label="Chat with us via Whatsapp"><FaWhatsapp fontSize={24}/></a>
+          <a href="https://api.whatsapp.com/send?phone=918639260889&text=Hello" rel='noopener noreferrer' title='Chat with us via Whatsapp' aria-label="Chat with us via Whatsapp"><FaWhatsapp fontSize={24}/></a>
         </div>
 
         <button type='button' className={`${styles.smallmenu__button} ${smallMenuActive ? styles.menu__active : ''}`} title='Menu Toggle Button' aria-label='Menu Toggle Button' onClick={() => {setSmallMenuActive(!smallMenuActive)}}>
