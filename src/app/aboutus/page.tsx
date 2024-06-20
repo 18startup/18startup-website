@@ -21,6 +21,7 @@ import partner3 from "../../../public/objects/about-partner3.png";
 import partner4 from "../../../public/objects/about-partner4.png";
 
 // Components
+import Hero from './Hero';
 import StatCounter from '@/components/StatCounter/StatCounter';
 
 export const metadata: Metadata = {
@@ -35,12 +36,7 @@ const Aboutus = () => {
       {/* Hero */}
 
       <section className={styles.aboutus__hero}>
-        <div className={styles.hero__images}>
-          <Image src={hero1} alt='Aboutus' width={148} height={296} placeholder='blur' />
-          <Image src={hero2} alt='Aboutus' width={148} height={296} placeholder='blur' />
-          <Image src={hero3} alt='Aboutus' width={148} height={296} placeholder='blur' />
-          <Image src={hero4} alt='Aboutus' width={148} height={296} placeholder='blur' />
-        </div>
+        <Hero/>
         <MainTitle t1='Welcome to' t2='18startup!' />
         <p>We&#39;re more than just a program; we&#39;re here to help you dive into the exciting realm of startups. Picture yourself learning from the very founders who transformed their ideas into remarkable success stories.</p>
       </section>

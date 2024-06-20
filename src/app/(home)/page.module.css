@@ -888,4 +888,8 @@
         text-align: left;
     }
 
+    .more__voices {
+        overflow-x: hidden;
+    }
+
 }

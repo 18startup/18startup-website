@@ -32,18 +32,14 @@ const Program = () => {
         <div className={styles.hero__main}>
           <div className={styles.block}>
             <Image src={hero1} alt='Strong business acumen' width={320} height={180} placeholder='blur' />
-            <p>Strong business acumen</p>
-          </div>
-          <div className={styles.block}>
             <Image src={hero2} alt='Execution abilities' width={320} height={180} placeholder='blur' />
-            <p>Execution abilities</p>
-          </div>
-          <div className={styles.block}>
             <Image src={hero3} alt='Driving by innovation' width={320} height={180} placeholder='blur' />
-            <div className={styles.block__more}>
-              <p>Driven by innovation</p>
-              <p>Highly networked individual</p>
-            </div>
+          </div>
+          <div className={styles.block__more}>
+            <p>Strong business acumen</p>
+            <p>Execution abilities</p>
+            <p>Highly networked individual</p>
+            <p>Driven by innovation</p>
           </div>
         </div>
 

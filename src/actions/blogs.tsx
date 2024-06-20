@@ -7,7 +7,7 @@ export const getAllBlogs =  async () => {
         
         const response = await fetch(`${process.env.SERVER_HOST_URL}/api/v1/blogs`, {
             method: 'GET',
-            cache: 'no-cache'
+            cache: 'no-cache'   
         });
 
         const blogsData = await response.json();

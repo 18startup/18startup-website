@@ -41,31 +41,32 @@
 }
 
 .hero__main {
-    width: 100%;
+    width: 800px;
+    max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 1.2rem;
     margin: 1.6rem auto;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.block, .fellowship__main {
+.block, .block__more {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
 }
 
-.block:nth-child(even) {
-    flex-direction: row-reverse;
+.block {
+    gap: 1.2rem;
 }
 
 .block img {
-    width: 320px;
+    width: 300px;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/8;
     object-fit: cover;
     border-radius: 6px;
     user-select: none;
@@ -75,26 +76,51 @@
 }
 
 .block__more {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1.6rem;
+    gap: 3.2rem;
+    position: relative;
 }
 
-.block p, .block__more p {
-    width: 300px;
+.block__more::before {
+    position: absolute;
+    content: "";
+
+    width: 4px;
+    height: 100%;
+    background-color: var(--mainText);
+    z-index: -1;
+}
+
+.block__more p {
+    width: 320px;
+    max-width: 100%;
     text-align: center;
     color: var(--mainText);
-    background-color: var(--lightOrange);
-    border: 2px solid var(--primaryOrange);
+    background-color: var(--mainBg);
+    border: 2px solid var(--mainText);
     padding: 0.6rem;
     border-radius: 18px;
     font-size: 1rem;
     font-weight: 400;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.block__more p:not(:last-child)::after {
+    position: absolute;
+    content: "";
+
+    width: 16px;
+    height: 16px;
+    background-color: var(--mainText);
+    transform: translateX(-50%) rotate(45deg);
+    bottom: -36px;
+    left: 50%;
 }
 
 .fellowship__main {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;    
     align-items: flex-start;
     margin: 1.6rem auto;
 }
@@ -326,6 +352,12 @@
         background-color: var(--primaryOrange);
         color: var(--mainBg);
     }
+
+    .block__more p:hover {
+        background-color: var(--primaryOrange);
+        color: var(--mainBg);
+        border-color: var(--primaryOrange);
+    }
 }
 
 @media all and (max-width: 1164px) {
@@ -394,17 +426,16 @@
         gap: 2rem;
     }
 
-    .block:nth-child(n) {
-        flex-direction: column-reverse;
-        gap: 0.8rem;
-    }
-
     .hero__main, .block, .block img {
         width: 100%;
     }
     
     .fellowship__main p {
         width: 100%;
+    }
+
+    .block {
+        display: none;
     }
 }
 
@@ -429,14 +460,6 @@
     .program__hero h1 {
         width: 100%;
     }
-        
-    .block__more {
-        gap: 1.12rem;
-    }
-        
-    .block > p, .block__more > p {
-        border-radius: 6px;
-    }
 
     .program__enrollment {
         padding: 0.8rem;
@@ -458,10 +481,6 @@
 
     .hero__main, .block, .block img, .block p, .block__more p, .block__more {
         width: 100%;
-    }
-
-    .block {
-        gap: 0.8rem;
     }
 
     .curriculum img, .curriculum p {
