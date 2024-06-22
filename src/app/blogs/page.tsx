@@ -64,7 +64,7 @@ const Blogs = async () => {
                   <p>Our team is working to bring blog posts which are knowledgeble and helps to build a strong startup.</p>
                 </div>
               ) : (
-                allBlogs.reverse().slice(0,4).map((blog) => {
+                allBlogs.reverse().slice(1,5).map((blog) => {
                   return (
                     <Link href={`/blogs/${blog.slug}`} className={styles.recent__blog} key={blog._id}>
                       <p>{blog.authorName ? blog.authorName : '18startup'}</p>
