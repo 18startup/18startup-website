@@ -79,7 +79,7 @@ const Home = () => {
 
       <section className={styles.program__hero}>
 
-        <MainTitle t1='Who is an' t2='18startup Entrepreneur?' align='center' type='head' />
+        <MainTitle t1='Who is an' t2='18startup Entrepreneur?' align='center' type='subhead' />
 
         <div className={styles.hero__main}>
           <div className={styles.block}>
