@@ -107,10 +107,15 @@
 
 .block__more p:not(:last-child)::after {
     position: absolute;
-    content: "";
+    content: "✖";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainBg);
+    font-size: 14px;
 
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     background-color: var(--mainText);
     transform: translateX(-50%) rotate(45deg);
     bottom: -36px;

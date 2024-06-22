@@ -49,12 +49,12 @@ const Program = () => {
 
       {/* Fellowship */}
 
-      <section className={styles.program__fellowship}>
-        <MainTitle t1='18startup' t2='Fellowship Program' type='subhead' align='center' />
-        <div className={styles.fellowship__main}>
-          <Image src={fellowship} width={400} height={224} placeholder='blur' alt='Fellowship Program'/>
+      <section className={styles.program__enrollment}>
+        <div className={styles.enrollment__details}>
+          <MainTitle t1='18startup' t2='Fellowship' align='left' type='subhead' />
           <p>Embark on a thrilling <span style={{ color: 'var(--primaryOrange)' }}>14-week adventure! Gain essential skills, mentorship, and financial support for startup success.</span> Founder-led, project-based learning with pathways for problem identification and a vibrant community will help you in your startup journey.</p>
         </div>
+        <Image src={fellowship} width={400} height={224} placeholder='blur' alt='18startup Bootcamp' />
       </section>
 
       {/* Fellowship */}
@@ -64,7 +64,7 @@ const Program = () => {
       <section className={styles.program__enrollment}>
         <div className={styles.enrollment__details}>
           <MainTitle t1='18startup' t2='Bootcamp' align='left' type='subhead' />
-          <p>Connect with like-minded individuals, mentors, investors, and industry experts who can help you on your startup journey. You can also <span>find a potential co-founder or teammate.</span> Additionally, Engage in self-discovery activities to identify your passion before starting your startup journey.</p>
+          <p>Connect with like-minded individuals, mentors, investors, and industry experts who can help you on your startup journey. You can also <span style={{ color: 'var(--primaryOrange)' }}>find a potential co-founder or teammate.</span> Additionally, Engage in self-discovery activities to identify your passion before starting your startup journey.</p>
         </div>
         <Image src={bootcamp} width={400} height={224} placeholder='blur' alt='18startup Bootcamp' />
       </section>

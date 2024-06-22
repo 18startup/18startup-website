@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import { FaInstagram } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { BsGlobeCentralSouthAsia } from "react-icons/bs";
-import { FaLinkedin, FaMapLocationDot, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaMapLocationDot, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 // Components
 import ContactForm from './ContactForm';
@@ -49,6 +49,7 @@ const Contactus = () => {
             <BsGlobeCentralSouthAsia fontSize={28} color='var(--primaryOrange)' />
             <h4>Social Media</h4>
             <div className={styles.media}>
+              <a href="https://www.youtube.com/@18Startup_" rel='noopener noreferrer' title='Open Youtube Channel' aria-label="Open Youtube Channel"><FaYoutube fontSize={24}/></a>
               <a href="https://x.com/18startup_" rel='noopener noreferrer' title='Open X (Former Twitter)' aria-label="Open X (Former Twitter)"><FaXTwitter fontSize={24}/></a>
               <a href="https://instagram.com/18startup" rel='noopener noreferrer' title='Open Instagram' aria-label="Open Instagram"><FaInstagram fontSize={24}/></a>
               <a href="https://www.linkedin.com/company/18startup/?viewAsMember=true" rel='noopener noreferrer' title='Open LinkedIn' aria-label="Open LinkedIn"><FaLinkedin fontSize={24}/></a>
