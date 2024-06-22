@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from "./page.module.css";
 
 // Actions
@@ -8,17 +8,34 @@ import saveContactFormResponse from '@/actions/contactform';
 const ContactForm = () => {
 
     const [saveResponseLoad, setSaveResponseLoad] = useState(false);
-    const [submitMessage, setSubmitMessage] = useState('');
+    // const [submitMessage, setSubmitMessage] = useState('');
+
+    // useEffect(() => {
+
+    //     let interval: NodeJS.Timeout;
+
+    //     if (submitMessage) {
+    //         interval = setInterval(() => {
+    //             setSubmitMessage('');
+    //         }, 4000);
+    //     }
+
+    //     () => clearInterval(interval);
+
+    // }, [submitMessage]);
 
   return (
     <form className={styles.contact__form} onSubmit={async (e) => {
         e.preventDefault();
+        const form = e.currentTarget;
         const formData = new FormData(e.currentTarget);
 
         setSaveResponseLoad(true);
         const response = await saveContactFormResponse(formData);
-        setSubmitMessage(response.message);
+        // setSubmitMessage(response.message);
+        alert(response.message);
         setSaveResponseLoad(false);
+        form.reset();
     }}>
         <h2>Fill the form <span>(* are required)</span></h2>
         <div className={styles.form__input}>
@@ -37,7 +54,7 @@ const ContactForm = () => {
             <label htmlFor="info">Extra Information</label>
             <textarea placeholder='Any extra information...' title='Write down any extra information...' id='info' name='Message'></textarea>
         </div>
-        {(submitMessage && !saveResponseLoad) && <p>{submitMessage}</p>}
+        {/* {(submitMessage && !saveResponseLoad) && <p>{submitMessage}</p>} */}
         <button disabled={saveResponseLoad} aria-disabled={saveResponseLoad} type="submit" title={`${!saveResponseLoad ? 'Save Contact Response' : 'Submitting Response'}`}>{saveResponseLoad ? 'Saving Response...' : 'Submit'}</button>
     </form>
   )
