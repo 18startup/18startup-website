@@ -7,6 +7,9 @@ import styles from "./page.module.css";
 // Asstes
 import hero1 from "../../../public/objects/home-hero1.jpg";
 import hero2 from "../../../public/objects/home-hero2.jpg";
+import program1 from "../../../public/objects/program-hero1.jpg";
+import program2 from "../../../public/objects/program-hero2.jpg";
+import program3 from "../../../public/objects/program-hero3.jpg";
 import logo from "../../../public/assets/favicon-icon.png";
 import events from "../../../public/objects/home-events.jpg";
 import bootcamp from "../../../public/objects/home-bootcamp.jpg";
@@ -76,9 +79,14 @@ const Home = () => {
 
       <section className={styles.program__hero}>
 
-        <MainTitle t1='Who is an' t2='18startup Entrepreneur?' align='center' type='subhead' />
+        <MainTitle t1='Who is an' t2='18startup Entrepreneur?' align='center' type='head' />
 
         <div className={styles.hero__main}>
+          <div className={styles.block}>
+            <Image src={program1} alt='Strong business acumen' width={320} height={180} placeholder='blur' />
+            <Image src={program2} alt='Execution abilities' width={320} height={180} placeholder='blur' />
+            <Image src={program3} alt='Driving by innovation' width={320} height={180} placeholder='blur' />
+          </div>
           <div className={styles.block__more}>
             <p>Strong business acumen</p>
             <p>Execution abilities</p>

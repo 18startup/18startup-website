@@ -484,7 +484,7 @@
 
 @media all and (max-width: 400px) {
 
-    .hero__main, .block, .block img, .block p, .block__more p, .block__more {
+    .hero__main, .block, .block img, .block__more p, .block__more {
         width: 100%;
     }
 
