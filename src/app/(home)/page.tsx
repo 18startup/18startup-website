@@ -72,6 +72,25 @@ const Home = () => {
 
       {/* Hero */}
 
+      {/* Who is 18startup Entreprenuer ? */}
+
+      <section className={styles.program__hero}>
+
+        <MainTitle t1='Who is an' t2='18startup Entrepreneur?' align='center' type='subhead' />
+
+        <div className={styles.hero__main}>
+          <div className={styles.block__more}>
+            <p>Strong business acumen</p>
+            <p>Execution abilities</p>
+            <p>Highly networked individual</p>
+            <p>Driven by innovation</p>
+          </div>
+        </div>
+
+      </section>
+
+      {/* Who is 18startup Entreprenuer ? */}
+
       {/* Why 18startup? */}
 
       <section className={`${styles.home__why}`}>

@@ -618,7 +618,88 @@
     gap: 1.2rem;
 }
 
+.program__hero {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    background-color: #f3743506;
+    padding: 3.2rem 1.2rem;
+}
+
+.hero__main {
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 1.6rem auto;
+    flex-direction: row;
+}
+
+.block__more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    position: relative;
+}
+
+.block__more::before {
+    position: absolute;
+    content: "";
+
+    width: 4px;
+    height: 100%;
+    background-color: var(--mainText);
+    z-index: -1;
+}
+
+.block__more p {
+    width: 320px;
+    max-width: 100%;
+    text-align: center;
+    color: var(--mainText);
+    background-color: var(--mainBg);
+    border: 2px solid var(--mainText);
+    padding: 0.6rem;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.block__more p:not(:last-child)::after {
+    position: absolute;
+    content: "✖";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainBg);
+    font-size: 14px;
+
+    width: 18px;
+    height: 18px;
+    background-color: var(--mainText);
+    transform: translateX(-50%) rotate(45deg);
+    bottom: -36px;
+    left: 50%;
+}
+
 @media (pointer: fine) and (hover: hover) {
+
+    .block__more p:hover {
+        background-color: var(--primaryOrange);
+        color: var(--mainBg);
+        border-color: var(--primaryOrange);
+    }
+
     .home__hero a:is(:hover, :focus-visible) {
         background-color: var(--mainBg);
         color: var(--primaryOrange);
@@ -892,4 +973,11 @@
         overflow-x: hidden;
     }
 
+}
+
+@media all and (max-width: 400px) {
+
+    .hero__main, .block__more p, .block__more {
+        width: 100%;
+    }
 }

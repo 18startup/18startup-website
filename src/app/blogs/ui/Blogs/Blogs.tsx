@@ -12,10 +12,10 @@ import { BlogType } from '@/types';
 const AllBlogs = ({allBlogs}: {allBlogs: BlogType[]}) => {
   return (
     <section className={styles.blogs__main}>
-        <h2>More from <span>18startup</span></h2>
+        <h2>From <span>18startup</span></h2>
         <div className={`${allBlogs.length < 3 ? styles.blogs__few : styles.blogs}`}>
             {
-                allBlogs.slice(1,).map((blog) => {
+                allBlogs.map((blog) => {
                     return (
                         <Link href={`/blogs/${blog.slug}`} className={styles.blog__card} key={blog._id}>
                             <Image src={blog.coverImage ? blog.coverImage : dummyBlog} alt={blog.title} width={300} height={220} />

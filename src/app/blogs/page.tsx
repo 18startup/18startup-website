@@ -13,9 +13,6 @@ import AllBlogs from './ui/Blogs/Blogs';
 // Actions
 import { getAllBlogs } from '@/actions/blogs';
 
-// Types
-import { BlogType } from '@/types';
-
 // Icons
 import SadIcon from '@/utils/Icons';
 
@@ -47,11 +44,11 @@ const Blogs = async () => {
 
         <div className={styles.main__blog}>
           <h1>Discover our <span>latest blogs</span></h1>
-          <Link href={`/blogs/${allBlogs[0].slug}`} className={styles.top__blog}>
-            <Image src={allBlogs[0].coverImage ? allBlogs[0].coverImage : dummyBlog} alt="Blog Post" width={540} height={320} />
+          <Link href={`/blogs/${allBlogs[allBlogs.length - 1].slug}`} className={styles.top__blog}>
+            <Image src={allBlogs[allBlogs.length - 1].coverImage ? allBlogs[allBlogs.length - 1].coverImage : dummyBlog} alt="Blog Post" width={540} height={320} />
             <div className={styles.blog__details}>
-              <h3>{allBlogs[0].title}</h3>
-              <p>{allBlogs[0].overview ? allBlogs[0].overview : 'No overview...'}</p>
+              <h3>{allBlogs[allBlogs.length - 1].title}</h3>
+              <p>{allBlogs[allBlogs.length - 1].overview ? allBlogs[allBlogs.length - 1].overview : 'No overview...'}</p>
             </div>
           </Link>
         </div>
@@ -67,7 +64,7 @@ const Blogs = async () => {
                   <p>Our team is working to bring blog posts which are knowledgeble and helps to build a strong startup.</p>
                 </div>
               ) : (
-                allBlogs.slice(1,5).map((blog) => {
+                allBlogs.reverse().slice(0,4).map((blog) => {
                   return (
                     <Link href={`/blogs/${blog.slug}`} className={styles.recent__blog} key={blog._id}>
                       <p>{blog.authorName ? blog.authorName : '18startup'}</p>
