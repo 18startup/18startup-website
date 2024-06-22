@@ -214,6 +214,13 @@
     transition: background-color 0.24s ease, color 0.24s ease, border 0.24s ease, outline 0.24s ease;
 }
 
+.contact__form p {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--mainBg);
+    font-weight: 500;
+}
+
 .contact__form button:disabled {
     background-color: #FFFFFFB0;
     color: var(--mediumOrange);
@@ -263,13 +270,13 @@
         color: var(--primaryOrange);
     }
 
-    .contact__form button:hover {
+    .contact__form button:not(:disabled):hover {
         background-color: var(--primaryOrange);
         color: var(--mainBg);
         border-color: var(--mainBg);
     }
 
-    .contact__form button:focus-visible {
+    .contact__form button:not(:disabled):focus-visible {
         outline-color: var(--mainBg);
     }
 }
