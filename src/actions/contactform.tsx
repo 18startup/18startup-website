@@ -19,13 +19,13 @@ export default async function saveContactFormResponse(formData: FormData) {
         if (response.status === 201) {
             return {
                 success: true,
-                message: 'Response Saved Successfully!'
+                message: 'We got your inquiry. Our team reach you soon.'
             }
         }
         else {
             return {
                 success: false,
-                message: 'Issue saving Reponse. Try again!'
+                message: 'Issue submitting response. Try again!'
             }
         }
 

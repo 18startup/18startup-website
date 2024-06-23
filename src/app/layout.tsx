@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
+// Toaster
+import { Toaster } from "react-hot-toast";
 
 // Nextjs Toploader
 import NextTopLoader from 'nextjs-toploader';
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={poppins.className}>
         <NextTopLoader color="var(--primaryOrange)" showSpinner={false} crawl={true} easing="ease-in" crawlSpeed={180} height={5} />
+        <Toaster containerStyle={{ zIndex: 1001, fontSize: '0.8rem' }} gutter={5} position="bottom-right" />
         <Navbar/>
         <main className="app__main">{children}</main>
         <Footer/>

@@ -4,25 +4,11 @@ import styles from "./page.module.css";
 
 // Actions
 import saveContactFormResponse from '@/actions/contactform';
+import createToast from '@/utils/createToast';
 
 const ContactForm = () => {
 
     const [saveResponseLoad, setSaveResponseLoad] = useState(false);
-    // const [submitMessage, setSubmitMessage] = useState('');
-
-    // useEffect(() => {
-
-    //     let interval: NodeJS.Timeout;
-
-    //     if (submitMessage) {
-    //         interval = setInterval(() => {
-    //             setSubmitMessage('');
-    //         }, 4000);
-    //     }
-
-    //     () => clearInterval(interval);
-
-    // }, [submitMessage]);
 
   return (
     <form className={styles.contact__form} onSubmit={async (e) => {
@@ -30,12 +16,12 @@ const ContactForm = () => {
         const form = e.currentTarget;
         const formData = new FormData(e.currentTarget);
 
+        const toastId = createToast('loading', 'Submitting your inquiry...');
         setSaveResponseLoad(true);
         const response = await saveContactFormResponse(formData);
-        // setSubmitMessage(response.message);
-        alert(response.message);
         setSaveResponseLoad(false);
-        form.reset();
+        response.success ? createToast('success', response.message, toastId) : createToast('error', response.message, toastId);
+        response.success && form.reset();
     }}>
         <h2>Fill the form <span>(* are required)</span></h2>
         <div className={styles.form__input}>
@@ -54,7 +40,6 @@ const ContactForm = () => {
             <label htmlFor="info">Extra Information</label>
             <textarea placeholder='Any extra information...' title='Write down any extra information...' id='info' name='Message'></textarea>
         </div>
-        {/* {(submitMessage && !saveResponseLoad) && <p>{submitMessage}</p>} */}
         <button disabled={saveResponseLoad} aria-disabled={saveResponseLoad} type="submit" title={`${!saveResponseLoad ? 'Save Contact Response' : 'Submitting Response'}`}>{saveResponseLoad ? 'Saving Response...' : 'Submit'}</button>
     </form>
   )
