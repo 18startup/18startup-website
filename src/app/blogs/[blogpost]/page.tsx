@@ -16,6 +16,17 @@ import dummyblog from "../../../../public/assets/dummyblog.jpg";
 import SadIcon from '@/utils/Icons';
 import wordsPerMinute from '@/utils/wordsPerPinute';
 
+export async function generateMetadata({params}: {params: {blogpost: string}}) {
+
+  const blogDetails = await getABlogBySlug(params.blogpost);
+
+  return {
+    title: blogDetails.title ? blogDetails.title + " | Blogs" : 'Blogs | 18startup',
+    description: blogDetails.overview ? blogDetails.overview : '18startup blogs equips founders with the knowledge and execution capabilities to build a startup.',
+    keywords: blogDetails.tags
+  }
+}
+
 const BlogPost = async ({params}: {params: {blogpost: string}}) => {
 
   const blogDetails = await getABlogBySlug(params.blogpost);
