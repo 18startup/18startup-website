@@ -10,19 +10,26 @@ export const getAllBlogs =  async () => {
             cache: 'no-cache'   
         });
 
-        const blogsData = await response.json();
+        let blogsData: any;
 
-        if (!response.ok) {
-            console.log(blogsData);
-            throw new Error('Issue fetching blogs... Try agin!');
+        if (response.ok) {
+            console.log('Gello')
+            blogsData = await response.json();
+        } else {
+        throw new Error('Issue fetching blogs... Try agin!');
+            throw new Error('Issue fetching blogs... Try agi!');
+        }
+
+
+        if (response.status > 400) {
+            console.log('Gello')
         }
 
         const { blogs }: {blogs: BlogType[]} = blogsData;
         return blogs;
 
     } catch (error) {
-        console.log(error);
-        throw new Error('Internal Server Error!');
+        throw new Error('Issue fetching blogs... Try agin!');
     }
 }
 
