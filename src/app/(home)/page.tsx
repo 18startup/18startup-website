@@ -46,6 +46,7 @@ import Voices from './Voices';
 import Approach from './Approach';
 import Faq from '@/components/Faq/Faq';
 import StatCounter from '@/components/StatCounter/StatCounter';
+import LazyLoadYTFrame from './LazyLoadYTFrame';
 
 export const metadata: Metadata = {
   title: "Home | 18startup",
@@ -66,8 +67,8 @@ const Home = () => {
           </div>
       
           <div className={styles.diff__images}>
-            <Image src={hero1} alt='18startup-Home' width={360} height={360} placeholder='blur' />
-            <Image src={hero2} alt='18startup-Home' width={120} height={120} placeholder='blur' />
+            <Image src={hero1} alt='18startup-Home' width={360} height={360} placeholder='blur' loading='eager' />
+            <Image src={hero2} alt='18startup-Home' width={120} height={120} placeholder='blur' loading='eager' />
             <Image src={logo} alt='18startup' width={120} height={120}/>
           </div>
 
@@ -109,9 +110,9 @@ const Home = () => {
             <p className={styles.para}>With <span>founder-led learning, hands-on mentorship, and a vibrant community</span>, we transform your journey into a powerhouse of skills.</p>
             <Link href="/aboutus" title='Learn more'>Learn more</Link>
           </div>
+          <LazyLoadYTFrame src="https://www.youtube.com/embed/vEfwA3qwcPA?si=wBOgUb2KjHYI4aaR" title="Why 18startup?" />
 
-          <iframe width="480" height="270" src="https://www.youtube.com/embed/vEfwA3qwcPA?si=wBOgUb2KjHYI4aaR" title="Why 18startup?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-
+          {/* <iframe width="480" height="270" src="https://www.youtube.com/embed/vEfwA3qwcPA?si=wBOgUb2KjHYI4aaR" title="Why 18startup?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
         </div>
         <Image src="/assets/curve.svg" alt='Curve' width={700} height={120} />
       </section>

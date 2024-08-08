@@ -2,6 +2,9 @@
 import React, { useState } from 'react'
 import styles from "./page.module.css"
 
+// UI
+import LazyLoadYTFrame from './LazyLoadYTFrame';
+
 const voices: {
     id: number,
     name: string,
@@ -103,7 +106,8 @@ const Voices = () => {
                                     <p className={styles.para}>{voice.description}</p>
                                     <a href="https://tally.so/r/wvylB0" target='_blank' rel='noopener noreferrer' title='Join our Community'>Join our Community</a>
                                 </div>
-                                <iframe width="480" height="270" src={voice.youtube.video} title={voice.youtube.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                <LazyLoadYTFrame src={voice.youtube.video} title={voice.youtube.title} />
+                                {/* <iframe width="480" height="270" src={voice.youtube.video} title={voice.youtube.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
                             </div>
                         )
                     })
