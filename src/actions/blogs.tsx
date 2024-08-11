@@ -13,16 +13,9 @@ export const getAllBlogs =  async () => {
         let blogsData: any;
 
         if (response.ok) {
-            console.log('Gello')
             blogsData = await response.json();
         } else {
-        throw new Error('Issue fetching blogs... Try agin!');
-            throw new Error('Issue fetching blogs... Try agi!');
-        }
-
-
-        if (response.status > 400) {
-            console.log('Gello')
+            throw new Error('Issue fetching blogs... Try agin!');
         }
 
         const { blogs }: {blogs: BlogType[]} = blogsData;

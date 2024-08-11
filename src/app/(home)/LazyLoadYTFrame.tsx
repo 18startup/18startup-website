@@ -1,5 +1,5 @@
 'use client'
-
+import styles from './page.module.css';
 import React, { useEffect, useRef, useState } from 'react';
 
 const LazyLoadYTFrame = ({ src, title }: {src: string, title: string}) => {
@@ -33,7 +33,7 @@ const LazyLoadYTFrame = ({ src, title }: {src: string, title: string}) => {
   }, []);
 
   return (
-    <div ref={iframeRef} style={{ minHeight: '270px', minWidth: '480px'}}>
+    <div ref={iframeRef} className={styles.frame__box}>
       {isLoaded && (
         <iframe
           width="480"

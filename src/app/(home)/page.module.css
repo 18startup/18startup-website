@@ -480,7 +480,7 @@
     transition: color 0.24s ease, background-color 0.24s ease;
 }
 
-.why__main iframe, .voices__main iframe {
+.why__main iframe, .voices__main iframe, .frame__box {
     width: 480px;
     max-width: 100%;
     height: auto;
